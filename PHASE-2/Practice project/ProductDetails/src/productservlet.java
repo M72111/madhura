@@ -37,12 +37,19 @@ public class productservlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 		
+	
+		//PrintWriter out = response.getWriter();
 		String name =request.getParameter("name");
 		String price= request.getParameter("price");
-		
+		if(name.isEmpty() || price.isEmpty()) {
+			request.setAttribute("name", name);
+			request.setAttribute("price", price);
+			request.getRequestDispatcher("/errorpage.jsp").forward(request, response);
+		}else {
 		request.setAttribute("name", name);
 		request.setAttribute("price", price);
 		request.getRequestDispatcher("/displayproduct.jsp").forward(request, response);
+		}
 		
 		
 		

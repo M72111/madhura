@@ -149,7 +149,7 @@ public class DbRetrieve {
 
 				int id = rs.getInt("id");
 				
-				String name = rs.getString("class");
+				String name = rs.getString("name");
 				
 				Class temp = new Class(id, name);
 				classes.add(temp);

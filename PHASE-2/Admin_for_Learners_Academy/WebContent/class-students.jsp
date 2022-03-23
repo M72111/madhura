@@ -7,7 +7,7 @@
 <title>Students of a Class</title>
 <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-image: url('css/classroom.jpg');">
+<body>
 <div id="page" >
 	<jsp:include page="left-list.jsp" />
 

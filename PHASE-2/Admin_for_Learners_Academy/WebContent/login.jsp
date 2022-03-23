@@ -7,9 +7,9 @@
 <title>Login</title>
  <link type="text/css" rel="stylesheet" href="css/login.css"> 
 </head>
-<body style="background-image: url('css/admin.jpeg')" >
+<body>
 
-  <center> <h1> Admin Login Page </h1> </center>   
+  <center> <h1> Admin Login</h1> </center>   
     <form action="AdminControllerServlet" method="POST">  
         <div class="container">   
         	<input type="hidden" name="command" value="LOGIN" />

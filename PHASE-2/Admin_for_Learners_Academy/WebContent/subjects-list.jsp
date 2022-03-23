@@ -17,8 +17,6 @@
 				<h3>Subjects</h3>
 			</div>
 		</div>
-
-
 		<div id="container">
 
 			<div id="content">
@@ -26,23 +24,16 @@
 				<table>
 
 					<tr>
-
 						<th>Name</th>
 						<th>Shortcut</th>
-						
-
-					</tr>
+						</tr>
 
 					<c:forEach var="tempSubject" items="${SUBJECTS_LIST }">
 						<tr>
-
 							<td>${tempSubject.name}</td>
 							<td>${tempSubject.shortcut}</td>
-							
-
+						
 						</tr>
-
-
 					</c:forEach>
 
 				</table>
